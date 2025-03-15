@@ -82,4 +82,23 @@ void main() {
   cars.forEach((car) {
     print("Car: $car");
   });
+
+  print("JUMP Statement ");
+  print("-------------- Break ------------------");
+
+  for (int i = 1; i <= 10; i++) {
+    if (i == 5) {
+      print("Breaking the loop at $i");
+      break;
+    }
+    print("Iteration: $i");
+  }
+
+  for (int i = 1; i <= 10; i++) {
+    if (i == 5) {
+      print("Breaking the loop at $i");
+      continue;
+    }
+    print("Iteration: $i");
+  }
 }
