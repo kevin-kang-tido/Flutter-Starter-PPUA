@@ -95,5 +95,36 @@ void main() {
     print("You need to finish your homework.");
   }
 
-  // TODO: Ternary Operator
+  bool hasID = true;
+  bool hasTicket = false;
+
+  if (hasID) {
+    if (hasTicket) {
+      print("You can enter the event.");
+    } else {
+      print("You need a ticket to enter.");
+    }
+  } else {
+    print("You need an ID to enter.");
+  }
+
+  int a5 = 15;
+  a -= 5; // Subtracts 5 from a (a = a - 5)
+  print("Value of a after -=: $a5");
+
+  // TODO: 4: Multiply and Assign (`*=`)
+  int a6 = 4;
+  a6 *= 3; // Multiplies a by 3 (a = a * 3)
+  print("Value of a after *=: $a6");
+
+  // TODO: 5: Divide and Assign (`/=`)
+
+  // TODO: 1: Ternary Conditional Operator (`condition ? expr1 : expr2`)
+  double a7 = 20;
+  a7 /= 4; // Divides a by 4 (a = a / 4)
+  print("Value of a after /=: $a7");
+
+  int age2 = 18;
+  String eligibility = age2 >= 18 ? "Eligible to vote" : "Not eligible to vote";
+  print("Voting status: $eligibility");
 }
