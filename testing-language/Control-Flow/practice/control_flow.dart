@@ -76,4 +76,10 @@ void main() {
   for (int i = 0; i < fruits.length; i++) {
     print("Fruit: ${fruits[i]}");
   }
+  // TODO: 5: `forEach` Method for Iterating a Collection
+  List<String> cars = ["Tesla", "BMW", "Toyota"];
+
+  cars.forEach((car) {
+    print("Car: $car");
+  });
 }
