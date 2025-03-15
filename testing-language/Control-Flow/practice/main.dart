@@ -48,4 +48,10 @@ void main() {
 
   print("Is a equation to b? ${num1 == num2}");
   print("Is a less than b? ${num1 != num2}");
+
+  // TO
+  a = 20;
+  b = 15;
+  print("Is a greater than b? ${a > b}");
+  print("Is a less than b? ${a < b}");
 }
