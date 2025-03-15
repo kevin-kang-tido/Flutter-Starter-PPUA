@@ -101,4 +101,32 @@ void main() {
     }
     print("Iteration: $i");
   }
+  // TODO: 3: `return` Statement in a Function
+
+  int num = 10;
+  if (num % 2 == 0) {
+    print("$num is even.");
+    return;
+  }
+  print("$num is odd.");
+  // TODO: 4: `break` in a Nested Loop
+  for (int i = 1; i <= 3; i++) {
+    for (int j = 1; j <= 3; j++) {
+      if (j == 2) {
+        print("Breaking inner loop at i=$i, j=$j");
+        break;
+      }
+      print("i=$i, j=$j");
+    }
+  }
+  // TODO: 5: `continue` in a Nested Loop
+  for (int i = 1; i <= 3; i++) {
+    for (int j = 1; j <= 3; j++) {
+      if (j == 2) {
+        print("Skipping inner loop iteration at i=$i, j=$j");
+        continue;
+      }
+      print("i=$i, j=$j");
+    }
+  }
 }
