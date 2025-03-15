@@ -69,4 +69,16 @@ void main() {
   } else {
     print("You are a child");
   }
+
+  // TODO: Logical OR ||
+  print("=====================> 8: Logical OR || ");
+  bool isAdult = age >= 18;
+  bool hasJob = true;
+  bool isEmployed = isAdult || hasJob;
+  print("Is the person adult or has a job? ${isEmployed}");
+
+  // TODO: NOT !
+  print("=====================> 9: NOT! ");
+  bool isEmployed1 = true;
+  print("Is the person employed? ${!isEmployed1}");
 }
