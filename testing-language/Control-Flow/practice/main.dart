@@ -60,4 +60,13 @@ void main() {
   String str2 = "Flutter";
   print("Are str1 and str2 equal? ${str1 == str2}");
   print("Are str1 and str2 not equal? ${str1 != str2}");
+
+  // TODO: if statement
+  print("=====================> 7: if statement ");
+  int age = 18;
+  if (age >= 18) {
+    print("You are an adult");
+  } else {
+    print("You are a child");
+  }
 }
