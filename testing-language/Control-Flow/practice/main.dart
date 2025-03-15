@@ -81,4 +81,19 @@ void main() {
   print("=====================> 9: NOT! ");
   bool isEmployed1 = true;
   print("Is the person employed? ${!isEmployed1}");
+
+  // TODO: Combinings Logic Operator
+
+  print("=====================> 10: Combining Logic Operators ");
+
+  bool isWeekend = true;
+  bool hasFinishedHomework = false;
+
+  if (isWeekend && (hasFinishedHomework || !hasFinishedHomework)) {
+    print("You can relax today!");
+  } else {
+    print("You need to finish your homework.");
+  }
+
+  // TODO: Ternary Operator
 }
