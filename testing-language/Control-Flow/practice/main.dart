@@ -54,4 +54,10 @@ void main() {
   b = 15;
   print("Is a greater than b? ${a > b}");
   print("Is a less than b? ${a < b}");
+
+  // TODO: Compareing with string comparison
+  String str1 = "Dart";
+  String str2 = "Flutter";
+  print("Are str1 and str2 equal? ${str1 == str2}");
+  print("Are str1 and str2 not equal? ${str1 != str2}");
 }
