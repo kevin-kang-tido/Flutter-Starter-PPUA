@@ -88,6 +88,7 @@ numbers.
  - Union of the sets.
  - Intersection of the sets.
  - Difference of Set A from
+
    */
 
   List<int> numbers1 = [1, 2, 3, 2, 4, 3, 5];
@@ -108,4 +109,54 @@ numbers.
   print("Union: $union");
   print("Intersection: $intersection");
   print("Difference (A - B): $difference");
+
+  // TODO: Section 3 : III. Map Collection
+  /**
+   * III. Map Collection
+1. Create a map to store information about a student (e.g., name, age, grade). Write a program to:
+A. Add a new key-value pair for the student's class.
+B. Update the student's grade.
+C. Remove the age key from the map.
+D. Print all the keys and values in the map.
+2. Create a map to store product names as keys and their prices as values. Write a program to:
+A. Check if a specific product exists in the map (e.g., "Laptop").
+B. Retrieve and print the price of a product if it exists.
+C. Print a message if the product is not found
+   */
+
+  Map<String, dynamic> student = {'name': 'John Doe', 'age': 25, 'grade': 'A'};
+
+  // A. Add a new key-value pair for the student's class
+  student['class'] = 'IT101';
+
+  // B. Update the student's grade
+  student['grade'] = 'A';
+
+  // C. Remove the age key
+  student.remove('age');
+
+  // D. Print all keys and values
+  print("Student Information:");
+
+  student.forEach((key, value) {
+    print("$key: $value");
+  });
+
+  // Create product map
+  Map<String, double> product2 = {
+    'Laptop': 1200.0,
+    'Phone': 800.0,
+    'Tablet': 500.0,
+  };
+
+  String searchProduct = 'Laptop';
+
+  // A. Check if product exists
+  if (product2.containsKey(searchProduct)) {
+    // B. Retrieve and print the price
+    print("The price of $searchProduct is \$${product2[searchProduct]}");
+  } else {
+    // C. Product not found
+    print("Product '$searchProduct' not found.");
+  }
 }
