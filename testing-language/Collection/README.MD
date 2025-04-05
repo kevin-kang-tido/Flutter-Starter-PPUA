@@ -1,4 +1,4 @@
-### Three Core Types
+### Three Core Types of Collection
 
 ❑Lists: Ordered group of items.
 ❑Sets: Unordered, unique items.
